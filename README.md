@@ -83,5 +83,5 @@ curl -X POST http://localhost:3000/api/exchange -H "Content-Type: application/js
 - **Sample Request:**
 
 ```bash
-curl -G http://localhost:3000/api/transactions --data-urlencode "startDate=2023-01-01" --data-urlencode "endDate=2023-12-31"
+curl -G http://localhost:3000/api/transactions --data-urlencode "startDate=2024-01-01" --data-urlencode "endDate=2024-12-31"
 ```
