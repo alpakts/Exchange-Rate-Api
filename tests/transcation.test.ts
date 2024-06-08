@@ -10,7 +10,6 @@ beforeAll(async () => {
 });
 test('should fetch transaction by ID', async () => {
   const transactions: Transaction[] = await getTransactionsService('test-id');
-  console.log('asdasd',transactions);
   expect(transactions).toEqual(expect.arrayContaining([
     expect.objectContaining({
       id: 'test-id',
@@ -27,7 +26,6 @@ test('should fetch transaction by ID', async () => {
 
 test('should fetch transactions by date range', async () => {
   const transactions: Transaction[] = await getTransactionsService(undefined, '2024-01-01', '2024-12-31');
-  console.log(transactions);
   expect(transactions).toEqual(expect.arrayContaining([
     expect.objectContaining({
       id: 'test-id',
