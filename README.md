@@ -11,29 +11,6 @@ After cloning the project, install the necessary dependencies:
 npm install
 ```
 
-## Configuration
-
-Ensure that the `tsconfig.json` file is correctly configured:
-
-```json
-{
-  "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",
-    "rootDir": ".",
-    "outDir": "./dist",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true
-  },
-  "include": ["src/**/*", "tests/**/*"],
-  "exclude": ["node_modules"]
-}
-```
-
 ## Development Server
 
 To run the TypeScript files during development:
